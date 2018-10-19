@@ -1,6 +1,7 @@
 // Dependencies
 const express = require("express");
 const mysql = require("mysql");
+// For displaying the database in Terminal
 const Table = require("easy-table");
 const inquirer = require('inquirer');
 
@@ -40,6 +41,7 @@ const productsInv = () => {
 
 const itemPrompt = (productsData) => {
   // console.log(productsData);
+  // Ask user to input product to buy
   inquirer
     .prompt([{
       name: "itemToBuy",
@@ -86,12 +88,7 @@ function quantityPrompt(productToBuy, stock, unitCost) {
         return parseInt(name) <= 0 || name.toLowerCase === "q";
       }
     }]).then(quantity => {
-      // db.query("SELECT stock_quantity, price FROM products WHERE ?",
-      //   [{item_id: productToBuy}], function (err, res) {
-      //     //  console.log(quantity);
-      //     if (err) throw err;
-      //     console.log(res);
-          // console.log(quantity.quantityToBuy);
+      
       if (quantity.quantityToBuy > stock) {
         //   console.log(res.stock_quantity);
         console.log(quantity.quantityToBuy);

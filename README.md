@@ -36,7 +36,15 @@ It uses the MySQL, esy-table and Inquirer npm packages.
    * If not, the app displays `Insufficient quantity!`, and then prevent the order from going through.
 
 8. However, if the store _does_ have enough of the product, it fulfills the customer's order and updates the SQL database to reflect the remaining quantity and displays the total sale amount. 
-   
+
+
+Here are two screen shots to show the app:
+
+![alt text](/images/correctqty.jpg "Survey questions") 
+
+
+![alt text](/images/insufficient.jpg "Survey questions") 
+
 ## Technologies Used
 
   * Node.js

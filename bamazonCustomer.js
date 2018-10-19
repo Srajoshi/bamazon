@@ -111,8 +111,8 @@ function quantityPrompt(productToBuy, stock, unitCost) {
 
 
 function buyProduct(productToBuy, newStock, sales) {
-  console.log("Thank you for purchasing item id: " + productToBuy + "for total of $ " + sales + ".");
-  db.query("UPDATE product SET ?, WHERE ?",
+  
+  db.query("UPDATE products SET ? WHERE ?",
     [
       {
         stock_quantity: newStock

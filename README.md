@@ -37,4 +37,10 @@ It uses the MySQL, esy-table and Inquirer npm packages.
 
 8. However, if the store _does_ have enough of the product, it fulfills the customer's order and updates the SQL database to reflect the remaining quantity and displays the total sale amount. 
    
-## Overview
+## Technologies Used
+
+  * Node.js
+  * mySQL
+  * Javascript
+  * jQuery
+
